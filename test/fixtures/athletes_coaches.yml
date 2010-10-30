@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  athlete_id: 1
+  coach_id: 1
+
+two:
+  athlete_id: 1
+  coach_id: 1

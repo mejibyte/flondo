@@ -1,0 +1,15 @@
+<% form_for @sport do |f| %>
+<%= f.label :name %>
+<br />
+<%= f.text_field :name %> 
+<br />
+<% for activity in Activity.find(:all) %>
+<br />
+<%= check_box_tag "sport[activity_ids][]", activity.id, @sport.activities.include?(activity) %><%= activity.name %>
+<% end %>
+<%= f.submit "Save" %>
+<br />
+<br />
+<%= link_to "add new activity", new_activity_path %>
+<% end %>
+  

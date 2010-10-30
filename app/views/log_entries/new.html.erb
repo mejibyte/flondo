@@ -1,0 +1,13 @@
+<%= @athlete.email %>
+<% form_for @log_entry do |f| %>
+  <%= f.date_select :date %>
+  <% for workout in @log_entry.workouts %>
+  <%= fields_for "log_entry[workout_attributes][]", workout do |workout_form| %>
+    <p>
+    Summary: <%= workout_form.text_area :summary %>
+    </p>
+    <% end %>
+  <% end %>
+  <%= f.submit "Save" %>
+<% end %>
+  

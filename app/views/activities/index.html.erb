@@ -1,0 +1,9 @@
+<h1>Activities</h1>
+<% @activities.each do |activity| %>
+  <%= link_to activity.name, edit_activity_path(activity) %> <%= link_to :delete, activity_path(activity), :method =>:delete, :confirm=>"are you sure?" %>
+  <br />
+<% end %>
+<br />
+<%= link_to "new", new_activity_path %>
+
+  

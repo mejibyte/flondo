@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2010-09-19
+  athlete_id: 1
+  feel: 1
+
+two:
+  date: 2010-09-19
+  athlete_id: 1
+  feel: 1

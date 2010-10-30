@@ -1,0 +1,7 @@
+<h1>Sports</h1>
+<% @sports.each do |sport| %>
+  <%= link_to sport.name, edit_sport_path(sport) %> <%= link_to :delete, sport_path(sport), :method =>:delete, :confirm => "Are you sure?" %>
+  <br />
+<% end %>
+<br />
+<%= link_to :new, new_sport_path %>

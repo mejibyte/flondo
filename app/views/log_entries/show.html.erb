@@ -1,0 +1,13 @@
+<ul id="mycarousel" class="jcarousel-skin-tango">
+<% @entries.each do |entry| %>
+  <li class="jcarousel-item"><%= entry.date %><% @workouts = entry.workouts.all %>
+  <% @workouts.each do |workout| %>
+  <ul>
+  <li><%= workout.summary %> hrs</li>
+  </ul>
+  <% end %>
+  </li>
+<% end %>
+</ul>
+<br/>
+
